@@ -1,8 +1,9 @@
 [Unit]
-Description=Scrub ZFS pool weekly
+Description=Scrub ZFS pool semi-weekly
 
 [Timer]
-OnCalendar=weekly
+# Every other week ish
+OnCalendar=*-*-1,15
 Persistent=true
 
 [Install]
